@@ -11,9 +11,15 @@ public class Converter {
 
     public static void main(String[] args) {
         float euro = Converter.rubleToEuro(140);
-        float dollar = Converter.rubleToDollar(140);
+        float dollar = Converter.rubleToDollar(120);
 
-        System.out.printf("140 rubles are %.2f euro.\n", euro);
-        System.out.printf("140 rubles are %.2f dollar.\n", dollar);
+        float expectedEuro = 2.f;
+        float expectedDollar = 2.f;
+
+        boolean passed = expectedEuro == euro;
+        System.out.println("Euro test passed: " + passed);
+
+        passed = expectedDollar == dollar;
+        System.out.println("Dollar test passed: " + passed);
     }
 }
