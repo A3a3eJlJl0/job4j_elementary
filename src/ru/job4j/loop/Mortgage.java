@@ -5,10 +5,10 @@ public class Mortgage {
         int year = 0;
         double balance = amount;
 
-        do {
+        while (balance > 0) {
             year++;
             balance = balance * (1 + percent / 100) - salary;
-        } while (balance > 0);
+        }
 
         return year;
     }
