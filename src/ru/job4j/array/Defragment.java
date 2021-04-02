@@ -11,10 +11,6 @@ public class Defragment {
                         array[j] = temp;
                         break;
                     }
-
-                    if (j == array.length - 1) {
-                        return array;
-                    }
                 }
             }
             System.out.print(array[i] + " ");
